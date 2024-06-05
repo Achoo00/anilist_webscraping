@@ -84,6 +84,7 @@ def output_text():
         for z in range(n):
             document.add_paragraph(f"[{titles[z].strip()}]({urls[z].strip()})")
             z += 1
+    os.chdir("C:\\Users\\amaha\\PycharmProjects\\anilist_webscraping\\output")
     document.save('output.docx')
 
 
@@ -94,7 +95,7 @@ def anime():
 def open(x):
     for y in range(x):
         webbrowser.open_new(site_urls[y])
-        os.chdir("/anilist_webscraping")
+        os.chdir("C:\\Users\\amaha\\PycharmProjects\\anilist_webscraping")
         locate(site_urls[y])
         y += 1
     output_text()
